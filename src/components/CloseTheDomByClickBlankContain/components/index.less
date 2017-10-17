@@ -1,0 +1,55 @@
+.blank_area {
+  width: 580px;
+  height: 250px;
+}
+
+.btn_open_current_area {
+  display: block;
+  width: 120px;
+  height: 36px;
+  border-radius: 20px;
+  background-color: #101010;
+  border: solid 1px #8e6f43;
+  cursor: pointer;
+  position: absolute;
+
+  .btn_open_current_area_text {
+    height: 36px;
+    line-height: 36px;
+    font-size: 14px;
+    text-align: center;
+    color: #a6a6a6;
+    margin: 0 auto;
+  }
+
+  &:hover {
+    border: solid 1px #fe9600;
+  }
+
+  &:active {
+    border: solid 1px #fe9600;
+    background-color: #fe9600;
+
+    .btn_open_current_area_text {
+      color: #ffffff;
+    }
+  }
+}
+
+.current_area {
+  width: 260px;
+  height: 90px;
+  border-radius: 5px;
+  background-color: #101010;
+  position: relative;
+  top: 80px;
+  left: 160px;
+
+  .current_area_text {
+    width: 260px;
+    height: 90px;
+    color: #a6a6a6;
+    line-height: 90px;
+    text-align: center;
+  }
+}
