@@ -1,5 +1,119 @@
 
 .SimulateAudio_contain {
-  width: 1280px;
-  margin: 0 auto;
+  width: 580px;
+  height: 250px;
+}
+
+.sound_volume_test_contain{
+  width: 532px;
+  height: 80px;
+  margin: 60px auto;
+
+  .test_sound_text{
+    height: 20px;
+    line-height: 20px;
+    font-size: 14px;
+    font-weight: 300;
+    color: #ffffff;
+  }
+
+  .test_sound_content{
+    width: 532px;
+    height: 30px;
+    border-radius: 50px;
+    background-color: #101010;
+    border: solid 1px #8e6f43;
+    margin-top: 30px;
+
+    .test_sound_btn{
+      float: left;
+      width: 20px;
+      height: 20px;
+      margin: 5px 8px 5px 12px;
+
+      .test_sound_icon_pause{
+        display: block;
+        width: 20px;
+        height: 20px;
+        background: url("../../../statics/images/pause_40_40_2x_170904.png") no-repeat center;
+        background-size: 20px;
+
+        &:hover{
+          background: url("../../../statics/images/pause_click_40_40_2x_170904.png") no-repeat center;
+          background-size: 20px;
+          cursor: pointer;
+        }
+      }
+
+      .test_sound_icon_play{
+        display: block;
+        width: 20px;
+        height: 20px;
+        background: url("../../../statics/images/play_40_40_2x_170904.png") no-repeat center;
+        background-size: 20px;
+
+        &:hover{
+          background: url("../../../statics/images/play_click_40_40_2x_170904.png") no-repeat center;
+          background-size: 20px;
+          cursor: pointer;
+        }
+      }
+    }
+
+    .test_sound_tips{
+      float: left;
+      width: 28px;
+      height: 20px;
+      line-height: 20px;
+      font-size: 14px;
+      color: #ffffff;
+      margin: 5px 19px 5px 0;
+    }
+
+    .test_sound_bar{
+      float: left;
+      width: 433px;
+      height: 6px;
+      border-radius: 50px;
+      background-color: #d8d8d8;
+      margin: 12px 0;
+      position: relative;
+
+      .test_sound_bar_playing{
+        display: block;
+        height: 6px;
+        border-radius: 50px;
+        background-color: #00b6fd;
+        margin: 12px 0;
+        position: relative;
+        top: -12px;
+      }
+
+      .test_sound_drag_ball{
+        display: block;
+        width: 14px;
+        height: 14px;
+        background-color: #ffffff;
+        border-radius: 7px;
+        margin-left: -7px;
+        position: absolute;
+        top: -4px;
+
+        &>span{
+          display: block;
+          width: 4px;
+          height: 4px;
+          background-color: #00b6fd;
+          border-radius: 2px;
+          position: relative;
+          top: 5px;
+          left: 5px;
+        }
+
+        &:active{
+          box-shadow: 0 2px 4px 0 rgba(0, 181, 253, 0.82);
+        }
+      }
+    }
+  }
 }

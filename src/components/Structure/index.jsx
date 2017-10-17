@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 // import PropTypes from 'prop-types';
 import SimulateAudioContain from '../SimulateAudioContain';
+import CloseTheDomByClickBlankAreaContain from '../CloseTheDomByClickBlankContain';
 import './index.less';
 
 class Structure extends Component {
@@ -15,6 +16,7 @@ class Structure extends Component {
         <h2 className="structure_title">组件目录</h2>
         <div>
           <SimulateAudioContain />
+          <CloseTheDomByClickBlankAreaContain />
         </div>
       </div>
     );
