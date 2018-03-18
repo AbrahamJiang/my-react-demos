@@ -12,7 +12,7 @@ class SimulateAudio extends Component {
   };
 
   componentDidMount() {
-    // 监听音频播放，模拟进度条随音量变化;当音频播放完毕，重置testSound值
+    // 监听音频播放，模拟进度条随音量变化; 当音频播放完毕，重置testSound值
     this.audioElem.addEventListener('timeupdate', this.soundTestPlayingBarMove.bind(this));
   }
 
